@@ -34,8 +34,8 @@ jobs:
           # ftp server
           server: ftp.dfrango.pt
           # ftp username
-          username: blyn
+          username: ${{secrets.FTP_USER}}
           # ftp password
-          password: blyat
+          password: ${{secrets.FTP_PASSWORD}}
           # Path to upload to on the server. Must end with trailing slash /
           server-dir: /public_html/test/
